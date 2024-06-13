@@ -1,0 +1,91 @@
+body {
+    font-family: 'Minecraftia', sans-serif; /* Используйте специальный шрифт, если доступен */
+    background-color: #2b2b2b;
+    color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    color: #76c7c0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    color: #f0f0f0;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #76c7c0;
+}
+
+main {
+    padding: 20px;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.latest-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.content-item {
+    background-color: #444;
+    padding: 10px;
+    border-radius: 5px;
+    transition: transform 0.3s;
+    width: calc(33.333% - 20px);
+}
+
+.content-item:hover {
+    transform: scale(1.05);
+}
+
+.content-item img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .content-item {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .content-item {
+        width: 100%;
+    }
+}
