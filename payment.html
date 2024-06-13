@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оплата - Мой сайт Minecraft</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Мой сайт Minecraft</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="mods.html">Сборки</a></li>
+                <li><a href="maps.html">Карты</a></li>
+                <li><a href="shaders.html">Шейдеры</a></li>
+                <li><a href="resourcepacks.html">Ресурспаки</a></li>
+                <li><a href="payment.html">Оплата</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="payment-form">
+            <h2>Оплата</h2>
+            <form action="/payment" method="POST">
+                <label for="card-number">Номер карты:</label>
+                <input type="text" id="card-number" name="card-number" required>
+                <label for="expiry-date">Срок действия:</label>
+                <input type="text" id="expiry-date" name="expiry-date" required>
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" required>
+                <button type="submit">Оплатить</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Мой сайт Minecraft. Все права защищены.</p>
+    </footer>
+</body>
+</html>
