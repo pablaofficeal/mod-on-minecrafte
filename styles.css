@@ -49,7 +49,8 @@ main {
     margin-bottom: 40px;
 }
 
-.latest-content {
+.latest-content,
+.content-list {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -70,6 +71,21 @@ main {
 .content-item img {
     max-width: 100%;
     border-radius: 5px;
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #76c7c0;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.download-btn:hover {
+    background-color: #5daaa8;
+    transform: scale(1.05);
 }
 
 footer {
